@@ -18,6 +18,17 @@ public class Mainclass {
 		 Transaction tr = ss.beginTransaction();
 		 
 		 Student s = new Student();
+		 s.setRollno(1);
+		 s.setName("Atharva");
+		 s.setAddress("Pune");
+		 s.setAge(22);
+		 s.setCourse("B. Tech");
+		 s.setDepartment("Computer");
+		 
+		 ss.save(s);
+		 System.out.println(s);
+		 tr.commit();
+		 ss.close();
 		 
 		 
 		 System.out.println("Application is Started....");
